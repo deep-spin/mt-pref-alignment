@@ -1,0 +1,67 @@
+{
+    "output_dir": "/mnt/data/jpombal/tower-results/generations/0_shot_assistant_no_seps_prompt",
+    "data_dir": "/mnt/data/jpombal/tower-results/instruction_data/0_shot_assistant_no_seps_prompt",
+    "tasks": [
+        {
+            "name": "mt",
+            "subtasks": {
+                "flores.en-pt-br": {},
+                "flores.en-zh-cn": {},
+                "flores.pt-br-en": {},
+                "flores.es-latam-en": {},
+                "flores.zh-cn-en": {},
+                "flores.ja-zh-cn": {},
+                "flores.en-hi": {},
+                "flores.en-is": {},
+                "flores.en-es-latam": {},
+                "wmt23.cs-uk": {},
+                "wmt23.en-zh-cn": {},
+                "wmt23.en-cs": {},
+                "wmt23.en-de": {},
+                "wmt23.en-ja": {},
+                "wmt23.en-ru": {},
+                "wmt23.en-uk": {},
+                "tico19.en-es-latam": {},
+                "tico19.en-zh-cn": {},
+                "tico19.en-hi": {}
+            }
+        }
+    ],
+    "models": [
+        {
+            "name": "gpt-4o",
+            "type": "open-ai",
+            "arguments": {
+                "model": "gpt-4o",
+                "max_tokens": 1024,
+                "debug": true,
+                "retry_max_attempts": 200,
+                "system_prompt": "Provide only the translated text without any additional words or phrases."
+            },
+            "hypothesis_dir": "/mnt/data/jpombal/tower-results/generations/0_shot_assistant_no_seps_prompt"
+        },
+        {
+            "name": "gpt-3.5-turbo",
+            "type": "open-ai",
+            "arguments": {
+                "model": "gpt-3.5-turbo",
+                "max_tokens": 1024,
+                "debug": true,
+                "retry_max_attempts": 200
+            },
+            "hypothesis_dir": "/mnt/data/jpombal/tower-results/generations/0_shot_assistant_no_seps_prompt"
+        },
+        {
+            "name": "gpt-4",
+            "type": "open-ai",
+            "arguments": {
+                "model": "gpt-4",
+                "max_tokens": 1024,
+                "debug": true,
+                "retry_max_attempts": 200
+            },
+            "hypothesis_dir": "/mnt/data/jpombal/tower-results/generations/0_shot_assistant_no_seps_prompt"
+        }
+    ],
+    "generation_time_average (lps)": -1
+}

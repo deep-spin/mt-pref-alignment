@@ -1,0 +1,53 @@
+{
+    "output_dir": "TowerEval-Data-v0.1/evaluations/0_shot_tower_instruct",
+    "data_dir": "/mnt/data/sagrawal/tower-alignment/tower-eval/TowerEval-Data-v0.1/data/raw_data",
+    "tasks": [
+        {
+            "name": "mt",
+            "subtasks": {
+                "wmt23.en-de": {},
+                "wmt23.en-ru": {},
+                "wmt23.en-zh": {
+                    "metrics": {
+                        "chrf": null,
+                        "bleu": {
+                            "tokenizer": "zh"
+                        },
+                        "comet": {
+                            "batch_size": 16
+                        },
+                        "metricx_xxl": {
+                            "batch_size": 16
+                        },
+                        "xcomet_xxl": {
+                            "batch_size": 16
+                        }
+                    }
+                },
+                "wmt23.de-en": {},
+                "wmt23.ru-en": {},
+                "wmt23.zh-en": {}
+            },
+            "metrics": {
+                "chrf": null,
+                "bleu": null,
+                "comet": {
+                    "batch_size": 16
+                },
+                "metricx_xxl": {
+                    "batch_size": 16
+                },
+                "xcomet_xxl": {
+                    "batch_size": 16
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "name": "alma-r",
+            "type": "vllm",
+            "hypothesis_dir": "TowerEval-Data-v0.1/generations/0_shot_tower_instruct"
+        }
+    ]
+}
